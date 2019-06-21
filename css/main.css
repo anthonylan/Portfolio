@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,800,900&display=swap");
+body {
+  background: #fff;
+  margin: 0;
+  font-family: "Montserrat", sans-serif; }
+
+a {
+  text-decoration: none; }
+
+/*Global
+===========================*/
+@media (max-width: 550px) {
+  .lg-screen {
+    display: none;
+    visibility: hidden; } }
+@media (min-width: 550px) {
+  .sm-screen {
+    display: none;
+    visibility: hidden; } }
+/*Bucket - Main*/
+.bucket .logo {
+  position: fixed;
+  z-index: 10; }
+  .bucket .logo img {
+    width: 80px; }
+  @media (min-width: 550px) {
+    .bucket .logo {
+      left: 1%;
+      top: -2%; }
+      .bucket .logo img {
+        width: 100px; } }
+.bucket .social {
+  position: absolute;
+  right: .5%;
+  top: 50%;
+  transform: translateY(-50%); }
+  .bucket .social a, .bucket .social i {
+    color: #1c1b20;
+    display: block;
+    padding: 3px;
+    font-weight: 800;
+    font-size: .9rem; }
+.bucket .nav-toggle {
+  position: fixed;
+  z-index: 10;
+  top: 3%;
+  right: 5%;
+  background: #fff;
+  display: table;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px; }
+  .bucket .nav-toggle i {
+    font-size: 1.3rem;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center; }
+
+/*Inner Bucket
+============================*/
+.inner-bucket {
+  padding: 2rem 2.5rem;
+  position: relative;
+  display: flex; }
+  .inner-bucket .bucket-header {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-52%); }
+    .inner-bucket .bucket-header h1 {
+      font-family: "Raleway", sans-serif;
+      font-weight: 900;
+      text-transform: uppercase;
+      font-size: 11rem;
+      line-height: .2;
+      letter-spacing: -3px;
+      color: #1c1b20; }
+      .inner-bucket .bucket-header h1 span {
+        font-family: "Montserrat", sans-serif;
+        color: #bfeaff; }
+    .inner-bucket .bucket-header .scroll {
+      margin-left: 39%; }
+      .inner-bucket .bucket-header .scroll p {
+        transform: rotate(-90deg);
+        position: fixed;
+        font-weight: 700;
+        color: #fff;
+        font-size: .8rem;
+        font-style: italic; }
+      .inner-bucket .bucket-header .scroll i {
+        transform: translate(1rem, 4rem);
+        color: #fff; }
+  .inner-bucket .half__bucket {
+    width: 50%;
+    height: 90vh; }
+  .inner-bucket .left {
+    background: #bfeaff; }
+  .inner-bucket .right {
+    background: #f8f8f8; }
+  @media (max-width: 550px) {
+    .inner-bucket {
+      padding: 0; }
+      .inner-bucket .bucket-header {
+        top: 30%; }
+        .inner-bucket .bucket-header h1 {
+          font-size: 6rem; }
+        .inner-bucket .bucket-header .scroll {
+          margin-left: 30%;
+          margin-top: 80%; }
+      .inner-bucket .half__bucket {
+        height: 100vh; } }

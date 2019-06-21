@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,800,900&display=swap');
+$stress-gray: #eae8e4;
+$bucket-black: #1c1b20;
+$stress-red: #ff5851;
+$blue: rgb(191, 234, 255);
+$pri-font: 'Montserrat', sans-serif;
+$sec-font: 'Raleway', sans-serif;
+body{
+    background: #fff;
+    margin: 0;
+    font-family: $pri-font;
+}
+a{
+    text-decoration: none;
+}
+/*Global
+===========================*/
+@media(max-width:550px){
+    .lg-screen{
+        display: none;
+        visibility: hidden;
+    }
+}
+@media(min-width:550px){
+    .sm-screen{
+        display: none;
+        visibility: hidden;
+    }
+}
+
+/*Bucket - Main*/
+.bucket{
+    .logo{
+        position: fixed;
+        z-index: 10;
+        img{
+            width: 80px;
+        }
+        @media (min-width:550px) {
+            left: 1%;
+            top: -2%;
+            img{
+                width: 100px;
+            }
+        }
+    }
+    .social{
+        position: absolute;
+        right: .5%;
+        top: 50%;
+        transform: translateY(-50%);
+
+        a, i{
+            color: $bucket-black;
+            display: block;
+            padding: 3px;
+            font-weight: 800;
+            font-size: .9rem;
+        }
+    }
+    .nav-toggle{
+        position: fixed;
+        z-index: 10;
+        top: 3%;
+        right: 5%;
+        background: #fff;
+        display: table;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+       
+        i{
+            font-size: 1.3rem;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+        }
+    }
+}
+
+/*Inner Bucket
+============================*/
+.inner-bucket{
+    padding: 2rem 2.5rem;
+    position: relative;
+    display: flex;
+    .bucket-header{
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translateX(-52%);
+        h1{
+            font-family: $sec-font;
+            font-weight: 900;
+            text-transform: uppercase;
+            font-size: 11rem;
+            line-height: .2;
+            letter-spacing: -3px;
+            color: $bucket-black;
+            span{
+                font-family: $pri-font;
+                color: $blue;
+            }
+        }
+        .scroll{
+           margin-left: 39%;
+            p{
+                transform: rotate(-90deg);
+                position: fixed;
+                font-weight: 700;
+                color: #fff;
+                font-size: .8rem;
+                font-style: italic;
+            }
+            i{
+                transform: translate(1rem, 4rem);
+                color: #fff;
+            }
+        }
+    }
+    .half__bucket{
+        width: 50%;
+        height: 90vh;
+    }
+    .left{
+        background: $blue;
+    }
+    .right{
+        background: #f8f8f8;
+    }
+    @media (max-width:550px) {
+        padding: 0;
+        .bucket-header{
+            top: 30%;
+            h1{
+                font-size: 6rem;
+            }
+            .scroll{
+                margin-left: 30%;
+                margin-top: 80%;
+            }
+        }
+        .half__bucket{
+            height: 100vh;
+        }
+    }
+}
