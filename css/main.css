@@ -198,7 +198,7 @@ a {
     .bio {
       width: 75%;
       left: 15%;
-      padding: 6rem 0 4rem 0; } }
+      padding: 8rem 0 4rem 0; } }
 
 .contact {
   height: auto;
@@ -367,6 +367,13 @@ a {
   .project-view .open-work {
     position: fixed;
     right: 3rem;
+    top: 3rem;
+    color: #fff;
+    z-index: 10;
+    font-size: 1.2rem; }
+  .project-view .go-home {
+    position: fixed;
+    left: 3rem;
     top: 3rem;
     color: #fff;
     z-index: 10;

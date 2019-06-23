@@ -256,7 +256,7 @@ a{
     @media (max-width:550px) {
         width: 75%;
         left: 15%;
-        padding: 6rem 0 4rem 0;
+        padding: 8rem 0 4rem 0;
     }
     
 }
@@ -483,7 +483,14 @@ a{
         z-index: 10;
         font-size: 1.2rem;
     }
-
+    .go-home{
+        position: fixed;
+        left: 3rem;
+        top: 3rem;
+        color: #fff;
+        z-index: 10;
+        font-size: 1.2rem;
+    }
     .content{
         display: table-cell;
         vertical-align: middle;
