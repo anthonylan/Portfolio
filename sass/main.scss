@@ -318,6 +318,7 @@ a{
             }
         }
         @media (max-width:550px) {
+
             .row{
                 flex-direction: column;
                 span{
@@ -331,6 +332,12 @@ a{
                     padding: .5rem .5rem .5rem 0;
                 }
             }
+        }
+    }
+    @media (max-width:550px) {
+        .open-convo{
+            line-height: 4;
+            transform: translateY(-1.5rem);
         }
     }
 }
