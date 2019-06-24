@@ -100,3 +100,17 @@ document.querySelector('.close-work').addEventListener('click', () => {
 
 
 
+//Check for DOM
+let stateCheck = setInterval(() => {
+    if (document.readyState === 'complete') {
+        clearInterval(stateCheck)
+        //Document ready
+        TweenMax.staggerFrom('.bucket-header h1', 2, {x: 30, opacity: 0, ease: Expo.easeOut, delay: 1}, 0)
+        TweenMax.from('.scroll', 2, { x: -30, opacity: 0, ease: Expo.easeOut, delay: 1 })
+        TweenMax.to('.pre-logo', .5, {opacity: 0})
+        TweenMax.to('.preloader', .5, {width: '0%', delay: 1})
+    }
+}, 3000)
+
+
+

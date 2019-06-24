@@ -468,3 +468,26 @@ a {
       transition: all .3s ease-out; }
     .project-section .next-project:hover img {
       transform: translate(-0.6rem, 1.5rem); }
+
+.preloader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  background: #f8f8f8;
+  z-index: 9999;
+  display: table; }
+  .preloader .pre-logo {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center; }
+    .preloader .pre-logo img {
+      width: 150px;
+      animation: fade 3s infinite;
+      opacity: .8; }
+@keyframes fade {
+  0%, 20%, 80%, 100% {
+    opacity: .8; }
+  60% {
+    opacity: .1; } }
