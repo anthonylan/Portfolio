@@ -79,9 +79,7 @@ document.querySelector('.close-about').addEventListener('click', () => {
 document.querySelectorAll('.trigger').forEach(triggers => {
     triggers.addEventListener('click', (e) => {
         e.preventDefault()
-        TweenMax.to('.left', .8, { width: '100%', ease: Expo.easeOut })
-        TweenMax.to('.right', .8, { width: '0%', ease: Expo.easeOut })
-        TweenMax.to('.full-view-work', .5, { x: '0%', ease: Expo.easeOut, delay: .5 })
+        TweenMax.to('.full-view-work', .5, { x: '0%', ease: Expo.easeOut})
         TweenMax.staggerFrom('.projects li', .5, {opacity: 0, x: -20, delay: .5,  ease:Expo.easeOut}, .2)
    })
     
@@ -90,8 +88,6 @@ document.querySelectorAll('.trigger').forEach(triggers => {
 
 //Close Work
 document.querySelector('.close-work').addEventListener('click', () => {
-    TweenMax.to('.left', .8, { width: '50%', ease: Expo.easeOut })
-    TweenMax.to('.right', .8, { width: '50%', ease: Expo.easeOut })
     TweenMax.to('.full-view-work', .5, { x: '-100%', ease: Expo.easeOut})
 })
 

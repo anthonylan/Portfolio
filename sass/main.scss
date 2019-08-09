@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i&display=swap');
 
 
+
+
 $stress-gray: #f8f8f8;
 $bucket-black: #1c1b20;
 $stress-red: #ff5851;
@@ -384,7 +386,6 @@ a{
         &:hover{
             color: $blue;
             transform: translateX(-.3rem);
-            font-style: italic;
         }
         i{
             transform: translate(-.2rem, .3px);

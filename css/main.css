@@ -300,8 +300,7 @@ a {
     transition: all .3s ease-in-out; }
     .full-view-work .close-work:hover {
       color: #bfeaff;
-      transform: translateX(-0.3rem);
-      font-style: italic; }
+      transform: translateX(-0.3rem); }
     .full-view-work .close-work i {
       transform: translate(-0.2rem, 0.3px); }
   .full-view-work .projects {
