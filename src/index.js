@@ -4,7 +4,7 @@ import 'imports-loader?define=>false!scrollmagic/scrollmagic/uncompressed/plugin
 
 
 
-
+//AOS.init();
 
         
 
@@ -56,7 +56,9 @@ document.querySelector('.close-about').addEventListener('click', () => {
      .setTween('.logo', { opacity: 0 })
      .addTo(controller)
  
- //Show and Hide Contact Info
+    
+    if (document.querySelector('.contact')) {
+         //Show and Hide Contact Info
  let contactToggle = new TimelineMax({paused: true, reversed: true})
  contactToggle.to('.contact', .2, { y: '-100%' })
  
@@ -71,6 +73,19 @@ document.querySelector('.close-about').addEventListener('click', () => {
 }
 
 
+document.querySelector('.open-contact').addEventListener('click', (e) => {
+    e.preventDefault();
+    TweenMax.to('.contact', .2, { y: '-100%' })
+    TweenMax.to('.bottom', .2, { display: 'block' })
+})
+document.querySelector('.close-contact').addEventListener('click', (e) => {
+    e.preventDefault();
+    TweenMax.to('.contact', .2, { y: '100%' })
+    TweenMax.to('.bottom', .2, { display: 'none' })
+})
+
+    }
+
 
 
 
@@ -80,7 +95,7 @@ document.querySelectorAll('.trigger').forEach(triggers => {
     triggers.addEventListener('click', (e) => {
         e.preventDefault()
         TweenMax.to('.full-view-work', .5, { x: '0%', ease: Expo.easeOut})
-        TweenMax.staggerFrom('.projects li', .5, {opacity: 0, x: -20, delay: .5,  ease:Expo.easeOut}, .2)
+        TweenMax.staggerFrom('.projects li', .5, {opacity: 0, y: -20, delay: .5,  ease:Expo.easeOut}, .2)
    })
     
 })
