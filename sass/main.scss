@@ -6,6 +6,11 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Vollkorn:400,700&display=swap');
 
+//Icons
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css');
+
+
 
 $stress-gray: #f3f3f3;
 $bucket-black: #1c1b20;
@@ -236,7 +241,7 @@ a{
     .open-work{
         position: fixed;
         top: 50%;
-        left: 2%;
+        left: 0.5%;
         z-index: 10;
         color: $bucket-black;
         text-transform: uppercase;
@@ -519,20 +524,25 @@ a{
     transform: translateX(-100%);
     background: $stress-black;
     .close-work{
-        position: fixed;
-        top: 3rem;
-        right: 3rem;
+        position: absolute;
+        top: 3%;
+        right: 3%;
         color: #fff;
-        font-family: $sec-font;
-        font-weight: 500;
-        font-size: .9rem;
+        font-family: $jos-font;
+        font-weight: 700;
+        font-size: 1rem;
         transition: all .3s ease-in-out;
+        padding: .6rem;
+        border-radius: 0px;
         &:hover{
-            color: $blue;
-            transform: translateX(-.3rem);
+            color: $stress-black;
+            background-color: $stress-gray;
+            font-weight: 700;
+       
         }
-        i{
-            transform: translate(-.2rem, .3px);
+        span{
+            display: inline-block;
+            transform: translateY(-.4rem);
         }
     }
     .projects{
